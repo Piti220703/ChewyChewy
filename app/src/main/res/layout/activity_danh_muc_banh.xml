@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/refreshdata"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DanhMucBanhActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/timkiembanhdanhmuc"
+                android:layout_width="320dp"
+                android:layout_height="65dp"
+                android:hint="Tìm Kiếm..."
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:background="@drawable/editdesign"
+                />
+
+            <ImageButton
+                android:id="@+id/btntimkiem"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:background="@color/hong"
+                android:src="@android:drawable/ic_menu_search"></ImageButton>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:hint="Thứ Tự Giá"
+            android:textColorHint="@color/black">
+
+            <AutoCompleteTextView
+                android:id="@+id/thutugia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/loc"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/hong"
+            android:text="Lọc"
+            android:textSize="18sp"
+            ></Button>
+        <TextView
+            android:id="@+id/tendanhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bộ Lọc"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            ></TextView>
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/listdanhmuc"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="10dp"
+           ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

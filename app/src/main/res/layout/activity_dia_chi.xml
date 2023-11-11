@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DiaChiActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+        <!--        Toolbar-->
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cam">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/arrow"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bảng địa chỉ giao hàng"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <Button
+            android:id="@+id/themdiachi"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/hong"
+            android:textColor="@color/black"
+            android:text="+ Thêm Địa Chỉ Mới"
+            android:layout_gravity="right"
+            android:layout_margin="12dp"
+            ></Button>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/hong"
+            android:text="Địa Chỉ Giao Hàng"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            ></TextView>
+
+            <ListView
+                android:id="@+id/listdiachi"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:dividerHeight="10sp"
+                android:layout_height="match_parent"
+                ></ListView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="100dp"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_app"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Please Login First"
+            android:textSize="12sp"
+            android:textColor="#E92C0C"
+            android:layout_marginTop="10dp"
+            />-->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/editdesign"
+            />
+        <EditText
+            android:id="@+id/matkhaucu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu Cũ"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/editdesign"
+            />
+        <EditText
+            android:id="@+id/matkhaumoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu Mới"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/editdesign"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/matkhaumoixacnhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Xác Nhận Mật Khẩu Mới"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/editdesign"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btndoimatkhau"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Đổi Mật Khẩu"
+            android:textAllCaps="false"
+            android:layout_gravity="right"
+            android:background="@drawable/btndesign"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

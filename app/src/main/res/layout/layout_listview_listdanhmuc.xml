@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carddanhmuc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@color/hong"
+        android:layout_marginBottom="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/hinhanhdanhmuc"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/tendanhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sinh Nhật"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="center"
+            ></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

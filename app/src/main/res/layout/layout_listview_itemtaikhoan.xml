@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dp"
+    android:layout_margin="15dp"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:textAlignment="center"
+    android:id="@+id/btnTK"
+    android:background="@color/hong"
+    android:text="Hồ sơ người dùng"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:drawableRight="@drawable/baseline_chevron_right_24"
+    >
+</TextView>

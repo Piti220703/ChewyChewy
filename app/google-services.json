@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "532246582255",
+    "project_id": "chewychewy-d3f60",
+    "storage_bucket": "chewychewy-d3f60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532246582255:android:c18242c8b5e17ac23b1c1a",
+        "android_client_info": {
+          "package_name": "com.example.chewychewy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmmxeb0CTcTRn5q-4KzWBefz_1Nxw-N8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
